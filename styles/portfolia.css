@@ -204,16 +204,45 @@ footer textarea{
 }
 
 @media screen and (max-width:576px) {
-    .skills-container, .resume-container, .secondary-bg, .about-items{
+    .skills-container,
+     .resume-container,
+     .banner,
+     nav,
+     nav > ul,
+      .secondary-bg, 
+      .about-items
+      {
         flex-direction: column;
     }
-    .secondary-bg, .about{
-        padding: 20px;
+    .header{
+        background-image: none;
     }
+    nav > ul{
+        gap: 20px;
+    }
+    .banner{
+        margin: 15px;
+    }
+    .secondary-bg,
+     .about,
+      .resume-container{
+        padding: 10px;
+    }
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+    .banner-pic{
+        width: 100%;
+    }
+
     .footer-colum{
         width: 100%;
     }
-    footer input[type="text"], footer input[type="email"]{
+    footer textarea{
+        width: calc(100% - 40px);
+    }
+    footer input[type="text"],
+     footer input[type="email"]{
         width: calc(100% - 40px);
     }
 }
